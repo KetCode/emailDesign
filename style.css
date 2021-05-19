@@ -1,0 +1,109 @@
+:root {
+    --primary: #4680FF;
+    --light-gray: #e5e5e5;
+    --light-primary: #6B99FF
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 93.75%;
+}
+
+body {
+    background: var(--light-gray);
+    font-family: sans-serif;
+}
+
+.container {
+    width: min(75vw, 800px);
+    margin: auto;
+}
+
+/* Header ========================= */
+header {
+    background: var(--primary);
+    padding: 4rem 0 9rem;
+    text-align: center;
+}
+
+img {
+    width: 50%;
+}
+
+#email {
+    margin-top: -5.5rem;
+}
+
+/* Card ========================= */
+.card {
+    background: white;
+    padding: 3rem 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.3rem;
+}
+
+.card h3 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card p {
+    padding: 3rem;
+
+    text-align: center;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button {
+    border: none;
+    border-radius: 0.3rem;
+
+    color: white;
+    font-weight: bold;
+    background: var(--primary);
+
+    width: 170px;
+    height: 50px;
+
+    padding: 0;
+    margin: auto;
+
+    cursor: pointer;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card button:hover {
+    background: var(--light-primary);
+}
+
+/* Footer ========================= */
+footer {
+    text-align: center;
+    color: black;
+    opacity: .4;
+
+    padding: 4rem 1rem 2rem;
+}
+
+/* Responsive ========================= */
+@media (min-width: 800px) {
+    html {
+        font-size: 87.5%;
+    }
+}
